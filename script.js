@@ -1,8 +1,8 @@
-function fetchGitHubData() {
+function fetchGitHubData(){
   const username = document.getElementById("username").value.trim();
   const profileContainer = document.getElementById("profile");
   const reposContainer = document.getElementById("repos");
-  const container = document.querySelector(".container")
+  const container = document.querySelector(".container");
 
   profileContainer.innerHTML = "";
   reposContainer.innerHTML = "";
@@ -45,4 +45,4 @@ function fetchGitHubData() {
     .catch(error => {
       profileContainer.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
     });
-}
+};
